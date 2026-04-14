@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libre -- Una Metodología de Desarrollo Anarquista</title>
+  <meta name="description" content="Una metodología de desarrollo de software que elimina la burocracia sin perder alineación. Orden sin autoridad. Entrega sin burocracia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo"><span>//</span> libre</a>
+    <ul class="nav-links">
+      <li><a href="#principios">Principios</a></li>
+      <li><a href="#flujo">Flujo</a></li>
+      <li><a href="#acuerdos">Acuerdos</a></li>
+      <li><a href="#comparativa">vs Scrum</a></li>
+      <li><a href="../" class="lang-switch">EN</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Libre</h1>
+    <p class="subtitle">Una Metodología de Desarrollo Anarquista</p>
+    <blockquote>"Orden sin autoridad. Entrega sin burocracia."</blockquote>
+    <p class="intro">Una metodología de desarrollo de software para equipos que quieren eliminar la burocracia, los roles no productivos y las reuniones periódicas sin perder alineación ni visibilidad. Construida sobre los principios anarquistas de autonomía, ayuda mutua y acuerdo voluntario.</p>
+  </section>
+
+  <!-- PRINCIPIOS -->
+  <section id="principios">
+    <h2><span class="section-number">#</span> Los cinco principios</h2>
+
+    <div class="principle">
+      <p class="principle-name"><span class="principle-number">1.</span> Visibilidad radical sobre control opaco</p>
+      <p>El estado del trabajo es público para todos en todo momento. No hay información de estado privilegiada. La transparencia no es una herramienta de vigilancia, es la condición que hace posible todo lo demás.</p>
+    </div>
+
+    <div class="principle">
+      <p class="principle-name"><span class="principle-number">2.</span> Autonomía sobre jerarquía</p>
+      <p>Ninguna persona tiene autoridad sobre el trabajo de otra. Cada individuo es soberano de sus decisiones técnicas y de su ritmo. La coordinación emerge del acuerdo voluntario, no de la cadena de mando.</p>
+    </div>
+
+    <div class="principle">
+      <p class="principle-name"><span class="principle-number">3.</span> Ayuda mutua sobre dependencia vertical</p>
+      <p>Cuando alguien necesita ayuda, la pide libremente. Cuando alguien puede ayudar, lo ofrece. No hay un rol que intermedie ese intercambio ni una estructura que lo fuerce. La colaboración es horizontal o no es.</p>
+    </div>
+
+    <div class="principle">
+      <p class="principle-name"><span class="principle-number">4.</span> Acuerdo voluntario sobre norma impuesta</p>
+      <p>Las reglas del equipo las escribe el equipo. Cualquier norma que no tenga el consenso de quienes la viven puede ser cuestionada, renegociada o eliminada. Libre es un punto de partida, no una constitución.</p>
+    </div>
+
+    <div class="principle">
+      <p class="principle-name"><span class="principle-number">5.</span> Acción directa sobre proceso burocrático</p>
+      <p>Si algo se puede hacer, se hace. No se espera aprobación, no se escala, no se agenda una reunión para decidir si agendar otra reunión. El trabajo avanza porque las personas avanzan, no porque el proceso lo autorice.</p>
+    </div>
+  </section>
+
+  <!-- FLUJO -->
+  <section id="flujo">
+    <h2><span class="section-number">#</span> El flujo de trabajo</h2>
+
+    <div class="flow-diagram">
+      <pre>IDEA -> [se decide] -> CONFIRMADA -> [se toma] -> EN CURSO -> REVISIÓN -> HECHO
+                                                        |
+                                                   [BLOQUEADA]</pre>
+    </div>
+
+    <div class="state-card">
+      <h3>Idea</h3>
+      <p>Existe, pero nadie ha decidido si se hace. Cualquiera puede añadirla. No necesita criterios formales todavía.</p>
+    </div>
+
+    <div class="state-card">
+      <h3>Confirmada</h3>
+      <p>El equipo ha decidido que se va a hacer. Para llegar a este estado necesita:</p>
+      <ul>
+        <li><strong>Qué</strong> -- descripción en una o dos frases</li>
+        <li><strong>Por qué</strong> -- el valor o problema que resuelve</li>
+        <li><strong>Criterio de hecho</strong> -- cómo sabemos que está terminada</li>
+      </ul>
+      <p>Puede estar asociada a una milestone o estar en flujo libre.</p>
+    </div>
+
+    <div class="state-card">
+      <h3>En curso</h3>
+      <p>Alguien la ha tomado voluntariamente. Una persona, una tarea. Quien la toma la lleva hasta hecho.</p>
+    </div>
+
+    <div class="state-card">
+      <h3>Bloqueada</h3>
+      <p>La tarea no puede avanzar por una causa externa. Al bloquearla se documenta:</p>
+      <ul>
+        <li>Qué la bloquea (entidad concreta)</li>
+        <li>Por qué no se puede continuar sin eso</li>
+        <li>Quién está haciendo seguimiento del desbloqueo</li>
+      </ul>
+      <p>No es un estado invisible ni permanente. Tiene seguimiento activo.</p>
+    </div>
+
+    <div class="state-card">
+      <h3>Revisión</h3>
+      <p>La tarea está hecha pero necesita que otra persona verifique que cumple el criterio de hecho. No es un comité de aprobación, es una verificación ligera.</p>
+    </div>
+
+    <div class="state-card">
+      <h3>Hecho</h3>
+      <p>Mergeado y listo para desplegar. No en una rama, no pendiente de revisión.</p>
+    </div>
+
+    <h3>Milestones</h3>
+    <p>Una milestone es una versión del software con fecha y contenido comprometido.</p>
+    <ul class="trigger-list">
+      <li>Tiene fecha y lista de tareas asociadas</li>
+      <li>Si una tarea de la milestone se bloquea, es una señal de riesgo visible de inmediato</li>
+      <li>Si hay demasiadas tareas para la fecha, se decide qué es prioritario, llegada la fecha saldrá lo que esté hecho</li>
+      <li>Se cierra cuando sus tareas están hechas. Si todo está listo antes de la fecha, el equipo puede decidir desplegar ya o seguir trabajando en tareas adicionales, siempre que no se haya alcanzado la fecha límite</li>
+    </ul>
+
+    <h3>Sobre las tareas</h3>
+    <p>Las tareas deben ser lo más pequeñas posibles pero con entidad propia. Una tarea representa algo completo y con valor en sí mismo. El criterio de hecho es la guía: si tiene cinco condiciones distintas, probablemente son dos tareas.</p>
+  </section>
+
+  <!-- ACUERDOS -->
+  <section id="acuerdos">
+    <h2><span class="section-number">#</span> Acuerdos de equipo</h2>
+
+    <h3>Capa 1 -- No negociables</h3>
+    <p>Estos acuerdos vienen con Libre. Sin ellos el sistema no funciona.</p>
+
+    <ol class="non-negotiable-list">
+      <li><strong>Todo el equipo conoce y comparte el objetivo del producto.</strong> Todas las personas del equipo entienden qué se quiere conseguir con el producto y por qué. Sin un objetivo compartido, la autonomía se convierte en dispersión.</li>
+      <li><strong>El trabajo es visible para todos.</strong> Cualquier persona puede ver cualquier tarea en cualquier estado, incluyendo las bloqueadas y sus motivos.</li>
+      <li><strong>Nadie asigna trabajo a otros.</strong> Las tareas se toman, no se reparten. Si una tarea lleva demasiado tiempo sin que nadie la tome, es una señal para el equipo.</li>
+      <li><strong>Quien toma una tarea la lleva hasta hecho.</strong> Incluyendo revisión y merge. No se abandona una tarea sin traspasarla explícitamente.</li>
+      <li><strong>Las tareas deben ser lo más pequeñas posibles pero con entidad propia.</strong> No se parte una tarea hasta hacerla trivial, pero tampoco crece hasta convertirse en un proyecto.</li>
+      <li><strong>Los bloqueos externos se documentan y tienen seguimiento activo.</strong> Una tarea bloqueada sin responsable de seguimiento no existe en la práctica.</li>
+    </ol>
+
+    <h3>Capa 2 -- El equipo decide</h3>
+    <p>Preguntas que el equipo debe responder antes de arrancar y revisar cuando dejen de funcionar:</p>
+
+    <div class="agreement-item">
+      <h3>Confirmar ideas</h3>
+      <p>¿Quién puede mover una idea a confirmada?</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Prioridad</h3>
+      <p>¿Cómo se decide qué se hace primero? ¿Quién puede cambiar la prioridad de una tarea confirmada?</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Límite de trabajo en curso</h3>
+      <p>¿Cuántas tareas en curso puede tener una persona a la vez? Libre recomienda una.</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Tiempo máximo en revisión</h3>
+      <p>¿Cuánto tiempo puede estar una tarea esperando revisión antes de que sea un problema?</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Tareas que nadie toma</h3>
+      <p>Una tarea confirmada que nadie toma es una señal. Redefinir, partir o descartar.</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Traspaso de tareas</h3>
+      <p>¿Cómo se traspasa una tarea cuando alguien no puede terminarla? El traspaso es siempre explícito.</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Decisiones técnicas</h3>
+      <p>¿Cómo se toman las decisiones que afectan a todo el equipo? Libre recomienda ADRs ligeros para decisiones grandes.</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Resolución de desacuerdos</h3>
+      <p>Conversación directa primero, luego con el equipo, y si no hay consenso, quien tiene la tarea decide.</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Incumplimiento de acuerdos</h3>
+      <p>Conversaciones honestas, no sanciones formales. Si un acuerdo se incumple sistemáticamente, el problema puede ser el acuerdo.</p>
+    </div>
+
+    <div class="agreement-item">
+      <h3>Incorporación de personas nuevas</h3>
+      <p>¿Cómo se incorpora alguien nuevo? Empezar con tareas pequeñas para familiarizarse con la metodología y el proyecto.</p>
+    </div>
+  </section>
+
+  <!-- LO QUE ELIMINA -->
+  <section id="elimina">
+    <h2><span class="section-number">#</span> Lo que Libre elimina</h2>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Eliminado</th>
+            <th>Por qué</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Daily standup</td><td>La información está visible sin necesidad de reunión</td></tr>
+          <tr><td>Sprint planning con estimaciones</td><td>Estimar en puntos o horas es overhead sin valor proporcional</td></tr>
+          <tr><td>Sprint review / retro fijos</td><td>Útiles a veces, no cada dos semanas por decreto</td></tr>
+          <tr><td>Scrum Master / Agile Coach</td><td>Rol meta-proceso que genera coordinación sin producir</td></tr>
+          <tr><td>PO como cuello de botella</td><td>Una persona decidiendo todo el backlog no escala</td></tr>
+          <tr><td>Reuniones periódicas</td><td>Las reuniones se convocan por eventos reales, no por calendario</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Cuándo reunirse</h3>
+    <p>No hay reuniones periódicas. Solo tres triggers válidos:</p>
+    <ol class="trigger-list">
+      <li>Algo está bloqueado y necesita una decisión</li>
+      <li>Hay que resolver una dirección técnica importante</li>
+      <li>El equipo detecta que algo no funciona y necesita cambiar algo</li>
+    </ol>
+    <p>Las reuniones no implican a todo el equipo. Se anuncia la reunión con un tema concreto y los miembros se unen libremente según les afecte.</p>
+  </section>
+
+  <!-- COMPARATIVA -->
+  <section id="comparativa">
+    <h2><span class="section-number">#</span> Libre y Scrum</h2>
+
+    <p>Scrum nació del Manifiesto Ágil, pero con el tiempo se ha convertido en algo que el propio manifiesto intentaba evitar: proceso sobre personas, ceremonias sobre resultados, roles sobre colaboración. Libre intenta volver a esa idea original.</p>
+
+    <div class="table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Scrum</th>
+            <th>Libre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Quién decide qué</td>
+            <td>El PO prioriza el backlog. El equipo ejecuta.</td>
+            <td>El equipo decide colectivamente. Orden visible, cualquiera puede proponer cambios.</td>
+          </tr>
+          <tr>
+            <td>Quién decide cómo</td>
+            <td>El equipo, dentro del marco del sprint.</td>
+            <td>Quien toma la tarea. Sin marco temporal artificial.</td>
+          </tr>
+          <tr>
+            <td>Reuniones</td>
+            <td>Daily, planning, review, retro. Todas recurrentes.</td>
+            <td>Solo cuando se justifica: bloqueo, decisión técnica, o algo que no funciona.</td>
+          </tr>
+          <tr>
+            <td>Estimaciones</td>
+            <td>Story points, fibonacci, tallas de camiseta.</td>
+            <td>Ninguna. Las tareas se hacen pequeñas y se sacan adelante.</td>
+          </tr>
+          <tr>
+            <td>Roles</td>
+            <td>SM, PO, Development Team.</td>
+            <td>Sin roles de proceso. Personas que escriben software y se coordinan.</td>
+          </tr>
+          <tr>
+            <td>Iteraciones</td>
+            <td>Sprints fijos de 1-4 semanas.</td>
+            <td>Milestones con fecha comprometida. El contenido se negocia.</td>
+          </tr>
+          <tr>
+            <td>Visibilidad</td>
+            <td>Depende de las ceremonias y del tablero.</td>
+            <td>Visible en todo momento. Es el primer principio.</td>
+          </tr>
+          <tr>
+            <td>Asignación</td>
+            <td>El PO prioriza, el equipo se compromete en el planning.</td>
+            <td>Nadie asigna. Cada persona toma lo que puede llevar a producción.</td>
+          </tr>
+          <tr>
+            <td>Bloqueos</td>
+            <td>Se reportan en la daily. Hasta 24h invisibles.</td>
+            <td>Se documentan de inmediato con causa y responsable.</td>
+          </tr>
+          <tr>
+            <td>Adaptación</td>
+            <td>Retro cada 2-4 semanas.</td>
+            <td>Cualquiera puede proponer un cambio en cualquier momento.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>El Manifiesto Ágil dice "individuos e interacciones sobre procesos y herramientas". Scrum responde con un proceso y un manual de certificación. Libre responde con cinco principios y la confianza en que las personas saben organizarse.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="version-badge">v0.1</div>
+  <p>Libre es una metodología viva. <a href="https://github.com/josecriane/libre">Contribuye en GitHub</a>.</p>
+  <p>Los principios son el núcleo. Todo lo demás es negociable.</p>
+</footer>
+
+</body>
+</html>
