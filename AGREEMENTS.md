@@ -179,4 +179,4 @@ Anyone on the team can propose a change to this document. Changes are approved b
 
 ---
 
-*Libre v0.1*
+*Libre v0.1.1*

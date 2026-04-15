@@ -19,6 +19,7 @@
       <li><a href="#principios">Principios</a></li>
       <li><a href="#flujo">Flujo</a></li>
       <li><a href="#acuerdos">Acuerdos</a></li>
+      <li><a href="#cuando">Cuándo funciona</a></li>
       <li><a href="#comparativa">vs Scrum</a></li>
       <li><a href="../" class="lang-switch">EN</a></li>
     </ul>
@@ -42,26 +43,31 @@
     <div class="principle">
       <p class="principle-name"><span class="principle-number">1.</span> Visibilidad radical sobre control opaco</p>
       <p>El estado del trabajo es público para todos en todo momento. No hay información de estado privilegiada. La transparencia no es una herramienta de vigilancia, es la condición que hace posible todo lo demás.</p>
+      <p class="principle-why"><em>Por qué es el primero:</em> la mayor parte del overhead de proceso existe para compensar la falta de información. Los standups existen porque la gente no sabe qué están haciendo los demás. Los informes de estado existen porque los managers no pueden ver el tablero. Si el estado del trabajo es visible para todos en todo momento, la mayor parte de ese overhead desaparece. La visibilidad es la base que hace viables los otros cuatro principios.</p>
     </div>
 
     <div class="principle">
       <p class="principle-name"><span class="principle-number">2.</span> Autonomía sobre jerarquía</p>
-      <p>Ninguna persona tiene autoridad sobre el trabajo de otra. Cada individuo es soberano de sus decisiones técnicas y de su ritmo. La coordinación emerge del acuerdo voluntario, no de la cadena de mando.</p>
+      <p>Ninguna persona tiene autoridad sobre el trabajo de otra. La coordinación emerge del acuerdo voluntario, no de la cadena de mando. Dentro del alcance de su tarea, cada persona decide cómo hacer el trabajo. Las decisiones que afectan a todo el equipo se toman colectivamente.</p>
+      <p class="principle-why"><em>Por qué:</em> la asignación jerárquica crea cuellos de botella y elimina la responsabilidad. Cuando alguien elige su propio trabajo, responde ante sí mismo y ante el equipo, no ante un manager que repartió tickets. El resultado es un flujo más rápido y mayor responsabilidad. Esto no significa aislamiento: significa que la persona que hace el trabajo tiene la última palabra sobre cómo hacerlo, mientras que el equipo tiene la última palabra sobre lo que afecta a todos.</p>
     </div>
 
     <div class="principle">
       <p class="principle-name"><span class="principle-number">3.</span> Ayuda mutua sobre dependencia vertical</p>
       <p>Cuando alguien necesita ayuda, la pide libremente. Cuando alguien puede ayudar, lo ofrece. No hay un rol que intermedie ese intercambio ni una estructura que lo fuerce. La colaboración es horizontal o no es.</p>
+      <p class="principle-why"><em>Por qué:</em> los roles de coordinación dedicados (Scrum Master, team lead como router) crean un punto único de fallo y ralentizan la comunicación. La colaboración directa entre las personas que tienen el contexto es más rápida y produce mejores resultados. Libre no obliga a nadie a ayudar, porque la ayuda forzada no es ayuda. Si el equipo detecta que la colaboración no está ocurriendo, es un trigger válido para una reunión: algo no funciona y el equipo necesita abordarlo.</p>
     </div>
 
     <div class="principle">
       <p class="principle-name"><span class="principle-number">4.</span> Acuerdo voluntario sobre norma impuesta</p>
       <p>Las reglas del equipo las escribe el equipo. Cualquier norma que no tenga el consenso de quienes la viven puede ser cuestionada, renegociada o eliminada. Libre es un punto de partida, no una constitución.</p>
+      <p class="principle-why"><em>Por qué:</em> las normas impuestas desde fuera del equipo se cumplen por obligación, no por convicción. Tienden a sobrevivir a su utilidad porque nadie se siente con poder para cambiarlas. Cuando el equipo escribe sus propias normas, también sabe cuándo reescribirlas. Esto produce un proceso que evoluciona con el equipo en vez de calcificarse a su alrededor.</p>
     </div>
 
     <div class="principle">
       <p class="principle-name"><span class="principle-number">5.</span> Acción directa sobre proceso burocrático</p>
       <p>Si algo se puede hacer, se hace. No se espera aprobación, no se escala, no se agenda una reunión para decidir si agendar otra reunión. El trabajo avanza porque las personas avanzan, no porque el proceso lo autorice.</p>
+      <p class="principle-why"><em>Por qué:</em> las cadenas de aprobación existen porque las organizaciones no confían en su gente. En un equipo que ha ganado confianza mutua, pedir permiso para actuar es pura fricción. El coste de hacer ocasionalmente algo que hay que deshacer es menor que el coste de esperar sistemáticamente autorización para hacer cualquier cosa.</p>
     </div>
   </section>
 
@@ -74,6 +80,8 @@
                                                         |
                                                    [BLOQUEADA]</pre>
     </div>
+
+    <p class="workflow-rationale">Estos seis estados son deliberados. Cada uno representa un cambio real en quién es responsable o qué puede pasar a continuación. Idea y Confirmada son estados separados porque la decisión de hacer algo es un compromiso real, no solo la existencia de la idea. No hay un estado "Preparada" entre Confirmada y En Curso porque una tarea confirmada ya está preparada: tiene un qué, un por qué y un criterio de hecho. Añadir más estados crearía proceso sin añadir información. Bloqueada no es un paso del flujo sino una condición que puede ocurrir durante En Curso, por eso se ramifica en vez de estar en la secuencia principal. Revisión existe porque la verificación por alguien distinto al autor detecta cosas que la auto-revisión no, pero es una verificación ligera, no una puerta de control.</p>
 
     <div class="state-card">
       <h3>Idea</h3>
@@ -93,7 +101,7 @@
 
     <div class="state-card">
       <h3>En curso</h3>
-      <p>Alguien la ha tomado voluntariamente. Una persona, una tarea. Quien la toma la lleva hasta hecho.</p>
+      <p>Alguien la ha tomado voluntariamente. Una persona, una tarea. Quien la toma la lleva hasta hecho. La razón para limitar el trabajo en curso es práctica: el cambio de contexto entre múltiples tareas ralentiza todas, y la responsabilidad compartida diluye la rendición de cuentas. Cuando una persona es responsable de principio a fin, las cosas se terminan más rápido y nada se queda en tierra de nadie. El equipo puede ajustar este límite en sus acuerdos, pero el valor por defecto es una.</p>
     </div>
 
     <div class="state-card">
@@ -125,6 +133,8 @@
       <li>Si hay demasiadas tareas para la fecha, se decide qué es prioritario, llegada la fecha saldrá lo que esté hecho</li>
       <li>Se cierra cuando sus tareas están hechas. Si todo está listo antes de la fecha, el equipo puede decidir desplegar ya o seguir trabajando en tareas adicionales, siempre que no se haya alcanzado la fecha límite</li>
     </ul>
+
+    <p class="milestone-rationale"><em>Por qué milestones en vez de sprints:</em> un sprint es una caja de tiempo fija que se repite independientemente de si hay algo significativo que entregar. Esto crea presión artificial para llenar el contenedor y plazos artificiales que no corresponden a necesidades reales del producto. Una milestone está atada a un objetivo concreto: una versión, un release, un compromiso. Existe porque hay algo que entregar, no porque hayan pasado dos semanas. La fecha es real y el contenido se negocia, lo que invierte la dinámica del sprint donde la fecha es fija y el scope teóricamente también pero en la práctica se renegocia constantemente como "spillover".</p>
 
     <h3>Sobre las tareas</h3>
     <p>Las tareas deben ser lo más pequeñas posibles pero con entidad propia. Una tarea representa algo completo y con valor en sí mismo. El criterio de hecho es la guía: si tiene cinco condiciones distintas, probablemente son dos tareas.</p>
@@ -233,6 +243,31 @@
     <p>Las reuniones no implican a todo el equipo. Se anuncia la reunión con un tema concreto y los miembros se unen libremente según les afecte.</p>
   </section>
 
+  <!-- CUÁNDO FUNCIONA -->
+  <section id="cuando">
+    <h2><span class="section-number">#</span> Cuándo funciona Libre y cuándo no</h2>
+
+    <p>Libre asume condiciones que no todos los equipos tienen. Ser explícito sobre ellas no es una debilidad, es honestidad.</p>
+
+    <h3>Libre funciona bien cuando:</h3>
+    <ul class="trigger-list">
+      <li>El equipo tiene suficiente madurez para tomar decisiones técnicas sin guía constante</li>
+      <li>Hay confianza mutua entre los miembros del equipo</li>
+      <li>Las personas tienen motivación intrínseca por hacer buen trabajo</li>
+      <li>El producto tiene un objetivo claro y compartido</li>
+    </ul>
+
+    <h3>Libre tendrá problemas cuando:</h3>
+    <ul class="trigger-list">
+      <li>El equipo es mayoritariamente junior y necesita mentoría estructurada y dirección clara</li>
+      <li>No hay confianza entre los miembros del equipo o entre el equipo y la organización</li>
+      <li>Las personas no están motivadas por el trabajo en sí y necesitan estructura externa para mantener el rumbo</li>
+      <li>El objetivo del producto no está claro o cambia tan frecuentemente que nadie puede orientarse de forma autónoma</li>
+    </ul>
+
+    <p>Scrum compensa algunas de estas condiciones con roles: el Scrum Master detecta disfunciones, el Product Owner fuerza la priorización. Libre elimina esos roles y los sustituye por visibilidad y acuerdos de equipo. Si el equipo no puede auto-organizarse con esas herramientas, Libre no es la metodología adecuada para ese equipo en ese momento. No es un juicio, es una cuestión de encaje.</p>
+  </section>
+
   <!-- COMPARATIVA -->
   <section id="comparativa">
     <h2><span class="section-number">#</span> Libre y Scrum</h2>
@@ -309,7 +344,7 @@
 </main>
 
 <footer>
-  <div class="version-badge">v0.1</div>
+  <div class="version-badge">v0.1.1</div>
   <p>Libre es una metodología viva. <a href="https://github.com/josecriane/libre">Contribuye en GitHub</a>.</p>
   <p>Los principios son el núcleo. Todo lo demás es negociable.</p>
 </footer>
